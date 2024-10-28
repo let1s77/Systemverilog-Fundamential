@@ -7,8 +7,8 @@ module top_module(
   
   genvar i;
   
-  assign sum[0] = a[0]^b[0]^cin;
-  assign cout[0]=a[0]&b[0] | a[0]&cin | b[0]&cin;
+    assign sum[0] = a[0]^b[0]^cin; //sum = 1
+    assign cout[0]=a[0]&b[0] | a[0]&cin | b[0]&cin; //dua len bia roi rut gon
   
   generate
       for(i=1; i<100 ; i=i+1)begin:FA
