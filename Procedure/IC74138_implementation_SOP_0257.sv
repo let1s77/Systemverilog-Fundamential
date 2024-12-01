@@ -21,7 +21,7 @@ default: Y = 8'b0000_0000;
 	end
 endmodule
 
-module eq_n(
+module top_module(
 input x,y,z,
 output x_show, y_show, z_show,f);
 
