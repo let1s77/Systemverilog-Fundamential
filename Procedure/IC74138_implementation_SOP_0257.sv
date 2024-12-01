@@ -2,7 +2,8 @@ module ic138(
 input [2:0] sel,
 input G1,G2a,G2b,
 output [7:0] Y);
-
+// assign Y = (G1 & ~G2a & ~G2b) ? ~(8'b1 << sel): 8'b1111_1111;//dich bit 1 sang trai roi dao lai
+//vd sel = 000 -> dich sang trai sel = 010 -> dao bit sel = 8'b1111_1101
 logic [5:0] temp;
 assign temp = {G1,G2a,G2b,sel};
 
