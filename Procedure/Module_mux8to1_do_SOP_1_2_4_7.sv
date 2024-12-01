@@ -31,7 +31,7 @@ module ic151(
     end
 endmodule
 
-module eq_n(
+module top_module(
     input x,                // Single bit input x
     input y,                // Single bit input y
     input z,                // Single bit input z
